@@ -1,50 +1,85 @@
+/* styles.css */
+
+/* General body font settings */
 body {
-   
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    line-height: 1.6; 
+    margin: 0; 
+    padding: 20px; 
+    background-color: #F5F5F5; /* Light gray background */
 }
 
+/* Header styles */
 header {
-    background-color: #ff2323;
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    text-align: center;
+    background-color: #D50000; /* Strong red header */
+    color: white; /* White text color */
+    padding: 20px; 
+    text-align: center; /* Center the header text */
+}
+
+header h1 {
+    font-size: 2em; 
+    margin-bottom: 10px; 
+}
+
+/* Navigation styles */
+nav {
+    margin-top: 15px; 
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-    overflow: hidden;
-    text-align: center;
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    display: inline; 
+    margin-right: 20px; 
 }
 
-nav ul li a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    background-color: #cc0000;
-    border-radius: 5px;
+nav a {
+    text-decoration: none; 
+    padding: 10px 20px; /* Increase clickable area */
+    color: white; /* White text for links */
+    transition: background-color 0.3s; /* Smooth background color change */
 }
 
-nav ul li a:hover {
-    background-color: #111;
+nav a:hover {
+    background-color: #B00000; /* Darker red on hover */
 }
 
+/* Main content styles */
+main {
+    text-align: left; /* Align text to the left for readability */
+    padding: 20px; /* Add padding for the main content */
+}
+
+/* Footer styles */
 footer {
-    background-color: #1f1e1e;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    text-align: center; 
+    padding: 10px; 
+    background-color: #D50000; /* Match footer color with header */
+    color: white; /* White text color */
+} 
+
+/* Placeholder styles */
+.placeholder {
+    background-color: #f0f0f0; /* Light gray background for contrast */
+    border: 2px dashed #D50000; /* Dashed border in strong red */
+    padding: 20px; /* Padding inside the placeholder */
+    margin: 20px 0; /* Margin around the placeholder for spacing */
+    color: #333; /* Dark gray text color */
+    font-size: 1.1em; /* Slightly larger font size for readability */
+    text-align: center; /* Center the text inside the placeholder */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
+
+/* Optional hover effect for placeholders */
+.placeholder:hover {
+    background-color: #e0e0e0; /* Slightly darker gray on hover */
+}
+
+

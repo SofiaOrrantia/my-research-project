@@ -1,46 +1,54 @@
+/* styles.css */
 
+/* General body font settings */
 body {
-    
-    background-color: #f4f4f4;
-    color: #000000;
-    margin: 0;
-    padding: 50px;
-    text-align: center;
+    font-family: Arial, sans-serif; /* Use a readable sans-serif font */
+    font-size: 16px; /* Set a base font size for the body */
+    line-height: 1.6; /* Improve line spacing for readability */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add some padding to the body for spacing */
 }
 
-header {
-    padding: 20px;
-    background-color: #ff0000;
-    color: rgb(255, 255, 255);
-    margin-bottom: 20px;
+/* Header styles */
+header h1 {
+    font-size: 2em; /* Larger font size for the main heading */
+    margin-bottom: 10px; /* Space below the heading */
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+header p {
+    font-size: 1em; /* Standard paragraph font size */
+    margin-bottom: 10px; /* Space between paragraphs */
 }
 
-p {
-    font-size: 1.2rem;
-    color: #000000;
+/* Navigation styles */
+nav ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    background-color: #f8f8f8; /* Optional: background color for the nav */
+    overflow: hidden; /* Clear floats */
 }
 
+nav ul li {
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Space between links */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Increase clickable area with padding */
+    color: #333; /* Text color for links */
+    border-radius: 5px; /* Optional: round the corners of the clickable area */
+    transition: background-color 0.3s; /* Smooth background color change on hover */
+}
+
+nav a:hover {
+    background-color: #ddd; /* Change background on hover */
+}
+
+/* Footer styles */
 footer {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #ff0000;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
-
-footer nav a:hover {
-    text-decoration: underline;
+    text-align: center; /* Center footer text */
+    padding: 10px; /* Padding around footer */
+    background-color: #f0f0f0; /* Light background for footer */
 }
